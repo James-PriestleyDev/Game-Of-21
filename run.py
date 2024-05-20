@@ -34,7 +34,9 @@ def new_game():
     prompting them to roll the dice.
     """
     current_score = 0
-    input_name = input("Players name: ")
-    print(f'Players name is {input_name} and their current score is {total}')
-
+    input_name = input("Who is playing today?: ")
+    if input_name.isalpha():
+        print(f'Players name is {input_name} and their current score is {current_score}')
+    else:
+        print("Invalid input, please enter a name")
 new_game()
