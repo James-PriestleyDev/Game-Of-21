@@ -48,10 +48,20 @@ def new_game():
         print(f'Your first roll of the dice lands on {roll}')
         print(f'Your new total is {current_score}')
         print("\n")
+        roll = random_number()
+        current_score += roll
         input("Type 'roll' to roll the dice!: ")
         print(f'Your second roll of the dice lands on {roll}')
         print(f'Your new total is {current_score}')
         print("\n")
+        roll = random_number()
+        current_score += roll
+        input("Type 'roll' to roll the dice!: ")
+        print(f'Your third roll of the dice lands on {roll}')
+        print(f'Your new total is {current_score}')
+        print("\n")
+        roll = random_number()
+        current_score += roll
 
         if current_score == 21:
             print("Congratulations you've won the game!")
