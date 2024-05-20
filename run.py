@@ -12,7 +12,7 @@ def game_description():
     print("Welcome to the Game of 21!")
     print("You will be given 3 rolls of a 10 sided dice")
     print("To win your rolls need to total exactly 21!")
-    print("Good luck!")
+    print("Good luck!\n")
 
 game_description()
 
@@ -37,3 +37,7 @@ def new_game():
     prompting them to roll the dice.
     """
     total = 0
+    input_name = input("Players name: ")
+    print(f'Players name is {input_name}')
+
+new_game()
