@@ -60,12 +60,12 @@ def new_game():
         print(f'Your third roll of the dice lands on {roll}')
         print(f'Your new total is {current_score}')
         print("\n")
-        roll = random_number()
-        current_score += roll
+        
+        total_score = current_score 
 
         if current_score == 21:
-            print("Congratulations you've won the game!")
+            print(f"Congratulations {input_name} you've won the game! with {total_score}")
         else:
-            print("Try again next time!") 
+            print(f"Sorry {input_name}. You lost the game with a score of {total_score}!") 
 
 new_game()
