@@ -47,16 +47,12 @@ def new_game():
         current_score += roll
         print(f'Your first roll of the dice lands on {roll}')
         print(f'Your new total is {current_score}')
-        input("Type 'roll' to roll the dice!: ")    
-        print(f'Your second roll of the dice lands on {roll}')
-        print(f'Your new total is {current_score}')
-        input("Type 'roll' to roll the dice!: ")
-        print(f'Your third roll of the dice lands on {roll}')
-        print(f'Your new total is {current_score}')
         
         if current_score == 21:
             print("Congratulations you've won the game!")
         else:
-            print("Try again next time!")    
-        
+            print("Try again next time!") 
+
+        break
+    
 new_game()
