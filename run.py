@@ -14,7 +14,7 @@ def new_game():
     print("To win you need to reach the number 21!")
     print("Good luck!")
 
-print(new_game())
+new_game()
 
 def random_number():
     """
