@@ -30,3 +30,10 @@ def random_number():
 
 value = random_number()
 print(value)
+
+def new_game():
+    """
+    This function will create the game for the user
+    prompting them to roll the dice.
+    """
+    total = 0
