@@ -28,16 +28,13 @@ def random_number():
 
     return number
 
-value = random_number()
-print(value)
-
 def new_game():
     """
     This function will create the game for the user
     prompting them to roll the dice.
     """
-    total = 0
+    current_score = 0
     input_name = input("Players name: ")
-    print(f'Players name is {input_name}')
+    print(f'Players name is {input_name} and their current score is {total}')
 
 new_game()
