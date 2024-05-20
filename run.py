@@ -11,7 +11,7 @@ def new_game():
     """
     print("Welcome to the Game of 21!")
     print("You will be given 3 rolls of a 10 sided dice")
-    print("To win you need to reach the number 21!")
+    print("To win your rolls need to total exactly 21!")
     print("Good luck!")
 
 new_game()
@@ -30,4 +30,3 @@ def random_number():
 
 value = random_number()
 print(value)
-
