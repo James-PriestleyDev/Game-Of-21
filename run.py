@@ -30,8 +30,9 @@ def random_number():
 
 def new_game():
     """
-    This function will create the game for the user
-    prompting them to roll the dice.
+    This function will create the users name
+    and will be the main function which runs the 
+    game.
     """
     current_score = 0
     input_name = input("Who is playing today?: ")
@@ -45,9 +46,11 @@ def new_game():
         roll = random_number()
         current_score += roll
         print(f'Your first roll of the dice lands on {roll}')
-        print(f'Your new total is {current_score}')    
+        print(f'Your new total is {current_score}')
+        input("Type 'roll' to roll the dice!: ")    
         print(f'Your second roll of the dice lands on {roll}')
         print(f'Your new total is {current_score}')
+        input("Type 'roll' to roll the dice!: ")
         print(f'Your third roll of the dice lands on {roll}')
         print(f'Your new total is {current_score}')
         
