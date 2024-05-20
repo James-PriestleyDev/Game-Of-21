@@ -39,4 +39,19 @@ def new_game():
         print(f'Players name is {input_name} and their current score is {current_score}')
     else:
         print("Invalid input, please enter a name")
+
+    while True:
+        input("Type 'roll' to roll the dice!: ")
+        roll = random_number()
+        current_score += roll
+        print(f'Your first roll of the dice lands on {roll}')
+        print(f'Your new total is {current_score}')    
+        break
+        print(f'Your second roll of the dice lands on {roll}')
+        print(f'Your new totla is {current_score}')
+        break
+        print(f'Your third roll of the dice lands on {roll}')
+        print(f'Your new total is {current_score}')
+        break
+        
 new_game()
