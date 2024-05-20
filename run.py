@@ -46,10 +46,8 @@ def new_game():
         current_score += roll
         print(f'Your first roll of the dice lands on {roll}')
         print(f'Your new total is {current_score}')    
-        break
         print(f'Your second roll of the dice lands on {roll}')
         print(f'Your new totla is {current_score}')
-        break
         print(f'Your third roll of the dice lands on {roll}')
         print(f'Your new total is {current_score}')
         break
