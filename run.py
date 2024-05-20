@@ -5,6 +5,10 @@
 import random
 
 def new_game():
+    """
+    This function will give the user a brief
+    description of the rules when the app starts.
+    """
     print("Welcome to the Game of 21!")
     print("You will be given 3 rolls of a 10 sided dice")
     print("To win you need to reach the number 21!")
