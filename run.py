@@ -4,7 +4,7 @@
 
 import random
 
-def new_game():
+def game_description():
     """
     This function will give the user a brief
     description of the rules when the app starts.
@@ -14,7 +14,7 @@ def new_game():
     print("To win your rolls need to total exactly 21!")
     print("Good luck!")
 
-new_game()
+game_description()
 
 def random_number():
     """
