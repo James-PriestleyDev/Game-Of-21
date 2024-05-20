@@ -66,6 +66,7 @@ def new_game():
         if current_score == 21:
             print(f"Congratulations {input_name} you've won the game! with {total_score}")
         else:
-            print(f"Sorry {input_name}. You lost the game with a score of {total_score}!") 
+            print(f"Sorry {input_name}. You lost the game with a score of {total_score}!")
+            print("Good luck next time!") 
 
 new_game()
