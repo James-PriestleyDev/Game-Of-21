@@ -58,6 +58,10 @@ Takes users name as input
 
 [Provide image of program taking users name]
 
+Takes user input and validates whether input is valid or not and gives response if invalid.
+
+[Provide image of invalid input]
+
 Adds the users results from each individual roll of the dice
 
 [Provide image of the users first, second and third roll]
@@ -65,3 +69,31 @@ Adds the users results from each individual roll of the dice
 Program tells user whether they are winner or not and shows their total.
 
 [Provide image of end result]
+
+## Future Features
+
+Allow player to play against a bot.
+Add a counter of how many wins/losses the user has gotten.
+
+## Testing
+
+I have manually tested this project by doing the following:
+
+    Tested each individual function with a print statement to ensure each function works
+    Tested the code in the Heroku app to ensure, once deployed the program functions as intended
+    Entered invalid inputs to test the validation checks inside the code.
+    Ran code through pep8 to ensure no faults or errors with code.
+
+
+
+## Bugs
+
+    Solved bugs
+
+   --------------
+
+## Validator Testing
+
+    Pep8
+
+[Provide image of pep8 results]    
