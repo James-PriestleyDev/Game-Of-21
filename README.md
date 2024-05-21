@@ -97,3 +97,10 @@ I have manually tested this project by doing the following:
     Pep8
 
 [Provide image of pep8 results]    
+
+## Deployment
+
+This project was deployed using Code Institute's 
+
+
+## Credits / References
