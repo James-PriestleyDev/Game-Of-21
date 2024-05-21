@@ -33,3 +33,35 @@ Happy coding!
 Game of 21
 
 README.md
+
+###########################################
+
+## GAME OF 21
+
+Game of 21 is a python terminal based game, which users can run through Heroku.
+
+The aim of the user is to have the total of 21 by the end of their 3 rolls. Thus, making them the winner.
+
+## How To Play
+
+Game of 21 is a game based off of the gambling game 'blackjack' except instead of playing cards.
+The user is given 3 rolls of a 10 sided dice and to win the game the user needs to roll a total
+of 21 with their 3 rolls. Any other number is considered a loss for the user.
+
+## Features
+
+Random number generator
+
+ [Provide image of random number once user has rolled the dice]
+
+Takes users name as input
+
+[Provide image of program taking users name]
+
+Adds the users results from each individual roll of the dice
+
+[Provide image of the users first, second and third roll]
+
+Program tells user whether they are winner or not and shows their total.
+
+[Provide image of end result]
