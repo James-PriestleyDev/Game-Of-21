@@ -18,7 +18,7 @@ game_description()
 
 #menu options , add elif to total.. elif = score beats CPU score. 
 
-def random_number(min_value = 6, max_value = 7):
+def random_number(min_value = 1, max_value = 10):
     """
     This function will generate a random number
     between 1 - 10 which the player will use for
@@ -73,13 +73,13 @@ def new_game():
         print("\n")
         
         total_score = current_score 
-        cpu_score = random_number(20, 21)
+        cpu_score = random_number(15, 20)
 
-        if total_score != 21 and cpu_score != 21:
-            print(f"Neither player managed to score 21!")
-            print(f"{input_name} scored {total_score}")
-            print(f"{input_cpu_name} scored {cpu_score}")
-            print("Better luck next time!")
+        if total_score and cpu_score == 21:
+            print(f"Congratulations! {input_name}, {input_cpu_name}!")
+            print("You are both winners!")
+            print(f"{input_name} scored {total_score}!")
+            print(f"{input_cpu_name} scored {cpu_score}!") 
         elif total_score == 21:
             print(f"Congratulations {input_name}. You are the winner!")
             print(f"{input_name} scored {total_score}")
@@ -89,10 +89,10 @@ def new_game():
             print(f"{input_cpu_name} scored {cpu_score}")
             print(f"{input_name} lost with a score of {total_score}")    
         else:
-            print(f"Congratulations! {input_name}, {input_cpu_name}!")
-            print("You are both winners!")
-            print(f"{input_name} scored {total_score}!")
-            print(f"{input_cpu_name} scored {cpu_score}!")    
+            print(f"Neither player managed to score 21!")
+            print(f"{input_name} scored {total_score}")
+            print(f"{input_cpu_name} scored {cpu_score}")
+            print("Better luck next time!")    
         break    
         
 new_game()
