@@ -17,7 +17,6 @@ def game_description():
 
 game_description()
 
-#menu options.
 
 def random_number(min_value = 1, max_value = 10):
     """
