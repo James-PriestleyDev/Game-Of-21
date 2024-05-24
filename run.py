@@ -50,7 +50,7 @@ def new_game():
     else:
         print("Invalid input, exiting the game...")
         return
-        
+               
     
     while True:
         input("Type 'roll' to roll the dice!: ")
