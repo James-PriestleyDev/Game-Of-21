@@ -73,18 +73,26 @@ def new_game():
         print("\n")
         
         total_score = current_score 
-        cpu_score = random_number(15, 21)
+        cpu_score = random_number(20, 21)
 
-        if current_score and cpu_score != 21:
-            print(f"Neither player managed to reach the score!")
-            print(f"{input_name} rolled {total_score}")
-            print(f"{input_cpu_name} rolled {cpu_score}")
+        if total_score and cpu_score != 21:
+            print(f"Neither player managed to score 21!")
+            print(f"{input_name} scored {total_score}")
+            print(f"{input_cpu_name} scored {cpu_score}")
             print("Better luck next time!")
-        else:
-            print(f"Sorry {input_name}. You lost the game with a score of {total_score}!")
-            print("Good luck next time!")
-            print(f"The bot rolled a {cpu_score}") 
-
+        elif total_score == 21:
+            print(f"Congratulations {input_name}. You are the winner!")
+            print(f"{input_name} scored {total_score}")
+            print(f"{input_cpu_name} lost with a score of {cpu_score}")
+        elif cpu_score == 21:
+            print(f"Congratulations {input_cpu_score}! You are the winner!")
+            print(f"{cpu_input_name} scored {cpu_score}")
+            print(f"{input_name} lost with a score of {total_score}")    
+        elif total_score and cpu_score == 21:
+            print(f"Congratulations! {input_name}, {input_cpu_name}!")
+            print("You are both winners!")
+            print(f"{input_name} scored {total_score}!")
+            print(f"{input_cpu_name} scored {cpu_score}!")    
         break    
         
 new_game()
