@@ -39,7 +39,6 @@ def new_game():
     the if/else statements will display the result of the winner / loser
     to the terminal once the player has had their 3 rolls.
     """
-    current_score = 0
     print("Starting a new game...\n")
     input_name = input("Who is playing today?: ")
     input_cpu_name = input("Name your challenger!: ")
@@ -51,7 +50,25 @@ def new_game():
         print("Invalid input, exiting the game...")
         return
                
-    
+    current_score = 0
+    user_rolls = ["first", "second", "third"]
+
+    for description in user_rolls:
+        while True:
+            try:
+                user_input = input("Type 'roll' to roll the dice!: ")
+                if user_input.lower() != 'roll':
+                    raise ValueError("Invalid input, please type 'roll'")
+                break
+            except ValueError as e:
+                print(e)
+
+        roll = random_number()
+        current_score += roll
+        print(f'Your {description} roll of the dice lands on {roll}')
+        print(f'Your new total is {current_score}')
+        print("\n")            
+    """
     while True:
         input("Type 'roll' to roll the dice!: ")
         roll = random_number()
@@ -73,28 +90,28 @@ def new_game():
         print(f'Your third roll of the dice lands on {roll}')
         print(f'Your new total is {current_score}')
         print("\n")
-        
-        total_score = current_score 
-        cpu_score = random_number(15, 21)
+    """
+    total_score = current_score 
+    cpu_score = random_number(15, 21)
 
-        if total_score and cpu_score == 21:
-            print(f"Congratulations! {input_name}, {input_cpu_name}!")
-            print("You are both winners!")
-            print(f"{input_name} scored... {total_score}!")
-            print(f"{input_cpu_name} scored... {cpu_score}!") 
-        elif total_score == 21:
-            print(f"Congratulations {input_name}. You are the winner!")
-            print(f"{input_name} scored... {total_score}")
-            print(f"{input_cpu_name} lost with a score of... {cpu_score}")
-        elif cpu_score == 21:
-            print(f"Congratulations {input_cpu_name}! You are the winner!")
-            print(f"{input_cpu_name} scored... {cpu_score}")
-            print(f"{input_name} lost with a score of... {total_score}")    
-        else:
-            print(f"Neither player managed to score 21!")
-            print(f"{input_name} scored... {total_score}")
-            print(f"{input_cpu_name} scored... {cpu_score}")
-            print("Better luck next time!")    
-        break    
+    if total_score and cpu_score == 21:
+        print(f"Congratulations! {input_name}, {input_cpu_name}!")
+        print("You are both winners!")
+        print(f"{input_name} scored... {total_score}!")
+        print(f"{input_cpu_name} scored... {cpu_score}!") 
+    elif total_score == 21:
+        print(f"Congratulations {input_name}. You are the winner!")
+        print(f"{input_name} scored... {total_score}")
+        print(f"{input_cpu_name} lost with a score of... {cpu_score}")
+    elif cpu_score == 21:
+        print(f"Congratulations {input_cpu_name}! You are the winner!")
+        print(f"{input_cpu_name} scored... {cpu_score}")
+        print(f"{input_name} lost with a score of... {total_score}")    
+    else:
+        print(f"Neither player managed to score 21!")
+        print(f"{input_name} scored... {total_score}")
+        print(f"{input_cpu_name} scored... {cpu_score}")
+        print("Better luck next time!")    
+    return
         
 new_game()
