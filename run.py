@@ -18,7 +18,7 @@ game_description()
 
 #menu options , add elif to total.. elif = score beats CPU score. 
 
-def random_number(min_value = 1, max_value = 10):
+def random_number(min_value = 6, max_value = 7):
     """
     This function will generate a random number
     between 1 - 10 which the player will use for
@@ -73,7 +73,7 @@ def new_game():
         print("\n")
         
         total_score = current_score 
-        cpu_score = random_number(15, 20)
+        cpu_score = random_number(20, 21)
 
         if total_score and cpu_score == 21:
             print(f"Congratulations! {input_name}, {input_cpu_name}!")
