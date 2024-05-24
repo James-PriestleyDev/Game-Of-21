@@ -73,7 +73,7 @@ def new_game():
     total_score = current_score
     cpu_score = random_number(15, 21)
 
-    if total_score and cpu_score == 21:
+    if total_score == 21 and cpu_score == 21:
         print(f"Congratulations! {input_name}, {input_cpu_name}!")
         print("You are both winners!")
         print(f"{input_name} scored... {total_score}!")
