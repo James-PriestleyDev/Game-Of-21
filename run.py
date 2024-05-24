@@ -67,29 +67,7 @@ def new_game():
         print(f'Your {description} roll of the dice lands on {roll}')
         print(f'Your new total is {current_score}')
         print("\n")            
-    """
-    while True:
-        input("Type 'roll' to roll the dice!: ")
-        roll = random_number()
-        current_score += roll
-        print(f'Your first roll of the dice lands on {roll}')
-        print(f'Your new total is {current_score}')
-        print("\n")
-
-        roll = random_number()
-        current_score += roll
-        input("Type 'roll' to roll the dice!: ")
-        print(f'Your second roll of the dice lands on {roll}')
-        print(f'Your new total is {current_score}')
-        print("\n")
-
-        roll = random_number()
-        current_score += roll
-        input("Type 'roll' to roll the dice!: ")
-        print(f'Your third roll of the dice lands on {roll}')
-        print(f'Your new total is {current_score}')
-        print("\n")
-    """
+   
     total_score = current_score 
     cpu_score = random_number(15, 21)
 
