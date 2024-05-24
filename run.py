@@ -43,7 +43,7 @@ def new_game():
     input_cpu_name = input("Name your challenger!: ")
     if input_name and input_cpu_name.isalpha():
         print(f'Players name is {input_name}!')
-        print(f'Challengers name is {input_cpu_name}')
+        print(f'Challengers name is {input_cpu_name}!')
         print("Good luck competitors!\n")
     else:
         print("Invalid input, please enter a name")
@@ -75,10 +75,12 @@ def new_game():
         total_score = current_score 
         cpu_score = random_number(15, 21)
 
-        if current_score == 21:
-            print(f"Congratulations {input_name} you've won the game! with {total_score}")
-            print(f"The bot rolled a {cpu_score}")
-        else:
+        if current_score and cpu_score != 21:
+            print(f"Neither player managed to reach the score!")
+            print(f"{input_name} rolled {total_score}")
+            print(f"{input_cpu_name} rolled {cpu_score})
+            print("Better luck next time!)
+        elif:
             print(f"Sorry {input_name}. You lost the game with a score of {total_score}!")
             print("Good luck next time!")
             print(f"The bot rolled a {cpu_score}") 
