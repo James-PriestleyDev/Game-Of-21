@@ -49,7 +49,7 @@ def new_game():
         print("Invalid input, please enter a name")
         new_game()
         
-    """
+    
     while True:
         input("Type 'roll' to roll the dice!: ")
         roll = random_number()
@@ -78,13 +78,13 @@ def new_game():
         if current_score and cpu_score != 21:
             print(f"Neither player managed to reach the score!")
             print(f"{input_name} rolled {total_score}")
-            print(f"{input_cpu_name} rolled {cpu_score})
-            print("Better luck next time!)
-        elif:
+            print(f"{input_cpu_name} rolled {cpu_score}")
+            print("Better luck next time!")
+        else:
             print(f"Sorry {input_name}. You lost the game with a score of {total_score}!")
             print("Good luck next time!")
             print(f"The bot rolled a {cpu_score}") 
 
         break    
-        """
+        
 new_game()
