@@ -54,9 +54,13 @@ Random number generator
 
  [Provide image of random number once user has rolled the dice]
 
-Takes users name as input
+User is able to input their own name into the game.
 
 [Provide image of program taking users name]
+
+User can name their 'challenger' (computer player)
+
+[Provide image of program taking name for challenger]
 
 Takes user input and validates whether input is valid or not and gives response if invalid.
 
@@ -79,9 +83,12 @@ Add a counter of how many wins/losses the user has gotten.
 
 I have manually tested this project by doing the following:
 
-    Tested each individual function with a print statement to ensure each function works
-    Tested the code in the Heroku app to ensure, once deployed the program functions as intended
-    Entered invalid inputs to test the validation checks inside the code.
+    Tested each individual function with a print statement to ensure each function works.
+
+    Tested the code in the Heroku app to ensure, once deployed the program functions as intended.
+
+    Entered invalid inputs to test the error handling measures inside the code.
+
     Ran code through pep8 to ensure no faults or errors with code.
 
 
@@ -104,3 +111,8 @@ This project was deployed using Code Institute's
 
 
 ## Credits / References
+
+Stackover flow.
+Youtube.
+w3schools.
+links to follow.
