@@ -30,17 +30,26 @@ def random_number(min_value = 1, max_value = 10):
 
 def new_game():
     """
-    This function will create the users name
-    and will be the main function which runs the 
-    game.
+    This function will allow the user to input their name,
+    will also allow the user to input a name for the CPU/Bot
+    they will be playing against.
+    This function will include the main bulk of the game
+    including the users roll and adding up their end total
+    after the user has had their 3 rolls and pitching it 
+    against the CPU/Bots roll.
     """
     current_score = 0
     input_name = input("Who is playing today?: ")
-    if input_name.isalpha():
-        print(f'Players name is {input_name} and their current score is {current_score}')
+    input_cpu_name = input("Name your challenger!: ")
+    if input_name and input_cpu_name.isalpha():
+        print(f'Players name is {input_name}!')
+        print(f'Challengers name is {input_cpu_name}')
+        print("Good luck competitors!\n")
     else:
         print("Invalid input, please enter a name")
-
+        new_game()
+        
+    """
     while True:
         input("Type 'roll' to roll the dice!: ")
         roll = random_number()
@@ -74,6 +83,6 @@ def new_game():
             print("Good luck next time!")
             print(f"The bot rolled a {cpu_score}") 
 
-        break
-    
+        break    
+        """
 new_game()
