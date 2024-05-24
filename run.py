@@ -4,6 +4,7 @@
 
 import random
 
+
 def game_description():
     """
     This function will give the user a brief
@@ -15,10 +16,11 @@ def game_description():
     print("You will be facing off against a fierce opponent of your choosing!")
     print("Good luck!\n")
 
+
 game_description()
 
 
-def random_number(min_value = 1, max_value = 10):
+def random_number(min_value=1, max_value=10):
     """
     This function will generate a random number
     between 1 - 10 which the player will use for
@@ -27,6 +29,7 @@ def random_number(min_value = 1, max_value = 10):
     number = random.randint(min_value, max_value)
 
     return number
+
 
 def new_game():
     """
@@ -48,7 +51,6 @@ def new_game():
     else:
         print("Invalid input, exiting the game...")
         return
-               
     current_score = 0
     user_rolls = ["first", "second", "third"]
 
@@ -66,16 +68,16 @@ def new_game():
         current_score += roll
         print(f'Your {description} roll of the dice lands on {roll}')
         print(f'Your new total is {current_score}')
-        print("\n")            
-   
-    total_score = current_score 
+        print("\n")
+
+    total_score = current_score
     cpu_score = random_number(15, 21)
 
     if total_score and cpu_score == 21:
         print(f"Congratulations! {input_name}, {input_cpu_name}!")
         print("You are both winners!")
         print(f"{input_name} scored... {total_score}!")
-        print(f"{input_cpu_name} scored... {cpu_score}!") 
+        print(f"{input_cpu_name} scored... {cpu_score}!")
     elif total_score == 21:
         print(f"Congratulations {input_name}. You are the winner!")
         print(f"{input_name} scored... {total_score}")
@@ -83,12 +85,13 @@ def new_game():
     elif cpu_score == 21:
         print(f"Congratulations {input_cpu_name}! You are the winner!")
         print(f"{input_cpu_name} scored... {cpu_score}")
-        print(f"{input_name} lost with a score of... {total_score}")    
+        print(f"{input_name} lost with a score of... {total_score}")
     else:
         print(f"Neither player managed to score 21!")
         print(f"{input_name} scored... {total_score}")
         print(f"{input_cpu_name} scored... {cpu_score}")
-        print("Better luck next time!")    
+        print("Better luck next time!")
     return
-        
+
+
 new_game()
