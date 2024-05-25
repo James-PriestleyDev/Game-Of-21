@@ -4,6 +4,9 @@ Game of 21 is a python terminal based game, which users can run through Heroku.
 
 The aim of the user is to have the total of 21 by the end of their 3 rolls. Thus, making them the winner. The user will also be going up against a computer player which they can name.
 
+Link to the live website:
+    https://projectporftolio3-e33d0c6856be.herokuapp.com/
+
 ## How To Play
 
 Game of 21 is a game based off of the gambling game 'blackjack' except instead of playing cards the user has a 10 sided dice, which they roll 3 times with the end goal being that 
@@ -83,6 +86,14 @@ I have manually tested this project by doing the following:
 
 ## Deployment
 
+This project was first deployed on Github and then was deployed through Heroku.
+
+    Steps for deployment:
+        Fork or clone this repository
+        Create a new Heroku app
+        Set the buildbacks to Python and NodeJS in that order
+        Link the Heroku app to the repository
+        Click on Deploy
 
 
 
