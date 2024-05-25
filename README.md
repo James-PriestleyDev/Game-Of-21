@@ -7,6 +7,8 @@ The aim of the user is to have the total of 21 by the end of their 3 rolls. Thus
 Link to the live website:
     https://projectporftolio3-e33d0c6856be.herokuapp.com/
 
+![Image of the live site deployed on Heroku](assets/docs/image-of-live-site.PNG)
+
 ## How To Play
 
 Game of 21 is a game based off of the gambling game 'blackjack' except instead of playing cards the user has a 10 sided dice, which they roll 3 times with the end goal being that 
