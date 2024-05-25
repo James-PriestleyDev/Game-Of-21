@@ -1,52 +1,16 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome James Priestley,
-
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
-
-## Reminders
-
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
-
-Game of 21
-
-README.md
-
-###########################################
-
 ## GAME OF 21
 
 Game of 21 is a python terminal based game, which users can run through Heroku.
 
-The aim of the user is to have the total of 21 by the end of their 3 rolls. Thus, making them the winner.
+The aim of the user is to have the total of 21 by the end of their 3 rolls. Thus, making them the winner. The user will also be going up against a computer player which they can name.
 
 ## How To Play
 
-Game of 21 is a game based off of the gambling game 'blackjack' except instead of playing cards.
-The user is given 3 rolls of a 10 sided dice and to win the game the user needs to roll a total
-of 21 with their 3 rolls. Any other number is considered a loss for the user.
+Game of 21 is a game based off of the gambling game 'blackjack' except instead of playing cards the user has a 10 sided dice, which they roll 3 times with the end goal being that 
+their total equals to 21. 
+
+To play the game the user has to input their name and a name of their choice for the computer
+player which they will be playing against. After the user has inputted this information they will be prompted to 'roll' the dice. Once the user has rolled the dice three times, the scores are collected from the user and the computer. The winner is the person who can achieve the score of 21. 
 
 ## Features
 
@@ -66,6 +30,14 @@ Takes user input and validates whether input is valid or not and gives response 
 
 [Provide image of invalid input]
 
+Rolling the dice, feature
+
+[Provide image of rolling dice]
+
+Exception handling if user attempts to input anything other than 'roll'
+
+[Provide image of error warning when != 'roll']
+
 Adds the users results from each individual roll of the dice
 
 [Provide image of the users first, second and third roll]
@@ -76,8 +48,7 @@ Program tells user whether they are winner or not and shows their total.
 
 ## Future Features
 
-Allow player to play against a bot.
-Add a counter of how many wins/losses the user has gotten.
+Add a counter of how many wins/losses the user/computer has achieved.
 
 ## Testing
 
@@ -89,7 +60,9 @@ I have manually tested this project by doing the following:
 
     Entered invalid inputs to test the error handling measures inside the code.
 
-    Ran code through pep8 to ensure no faults or errors with code.
+    When I ran my code through pep8 there were issues with empty whitespaces. These 
+    have since been removed and now when I run my code through pep8 it gets the 'All clear, no
+    errors found' response. 
 
 
 
@@ -97,7 +70,10 @@ I have manually tested this project by doing the following:
 
     Solved bugs
 
-   --------------
+   There was a bug involving the segment where the user inputs their name.
+   If the user decided to spam numbers into the input, it resulted in numerous
+   extra roll inputs once the initial 3 had been completed. This has since been
+   fixed by changing the 'break' into a 'return' at the end of the if/else statement.
 
 ## Validator Testing
 
@@ -107,12 +83,13 @@ I have manually tested this project by doing the following:
 
 ## Deployment
 
-This project was deployed using Code Institute's 
+
 
 
 ## Credits / References
 
-Stackover flow.
-Youtube.
-w3schools.
-links to follow.
+Stackover flow. https://stackoverflow.com/
+Youtube. https://www.youtube.com/@TechWithTim
+w3schools. https://www.w3schools.com/
+chatGPT. https://chatgpt.com/?oai-dm=1
+Code Institute pp3 README.md example. https://codeinstitute.net/
