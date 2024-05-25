@@ -45,14 +45,14 @@ def new_game():
     input_name = input("Who is playing today?: ")
     input_cpu_name = input("Name your challenger!: ")
     if input_name and input_cpu_name.isalpha():
-        print(f'Players name is {input_name}!')
-        print(f'Challengers name is {input_cpu_name}!')
+        print(f'Players name is {input_name}!') # Allows user to input their name
+        print(f'Challengers name is {input_cpu_name}!') # Allows user to name their opponent
         print("Good luck competitors!\n")
     else:
         print("Invalid input, exiting the game...")
-        return
+        return # ends game if user attempts to input invalid name
     current_score = 0
-    user_rolls = ["first", "second", "third"]
+    user_rolls = ["first", "second", "third"] # Used to tell user which roll they have done
 
     for description in user_rolls:
         while True:
@@ -60,9 +60,9 @@ def new_game():
                 user_input = input("Type 'roll' to roll the dice!: ")
                 if user_input.lower() != 'roll':
                     raise ValueError("Invalid input, please type 'roll'")
-                break
+                break # Breaks code if invalid input has been detected
             except ValueError as e:
-                print(e)
+                print(e) # Prints reason for error to terminal
 
         roll = random_number()
         current_score += roll
@@ -70,8 +70,8 @@ def new_game():
         print(f'Your new total is {current_score}')
         print("\n")
 
-    total_score = current_score
-    cpu_score = random_number(15, 21)
+    total_score = current_score # Variable used for users combined score after 3 rolls
+    cpu_score = random_number(15, 21) # Opponents roll
 
     if total_score == 21 and cpu_score == 21:
         print(f"Congratulations! {input_name}, {input_cpu_name}!")
@@ -91,7 +91,7 @@ def new_game():
         print(f"{input_name} scored... {total_score}")
         print(f"{input_cpu_name} scored... {cpu_score}")
         print("Better luck next time!")
-    return
+    return # Ends game once all rolls have been completed and result has been printed to terminal
 
 
 new_game()
