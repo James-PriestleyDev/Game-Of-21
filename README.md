@@ -78,11 +78,21 @@ If the user decided to spam numbers into the input, it resulted in numerous
 extra roll inputs once the initial 3 had been completed. This has since been
 fixed by changing the 'break' into a 'return' at the end of the if/else statement.
 
+- There was another bug involving the outcome of results. When the users result was 21
+the message would appear saying that BOTH players had won, despite only the user getting
+the winning result. I resolved this by changing the order of the elif statements and ammended
+some of the syntax.
+
+- When adding additional comments to my code, they exceeded the character limit for the 
+pep8 validation. To resolve this I reduced the text within the comments.
+
 ## Validator Testing
 
 Below are the results from when I ran my code through the pep8 validator.
 
-![Image of results from pep8](assets/docs/pep8-results.PNG)    
+ ![First image of the pep8 validation results](assets/docs/image-of-validation-1.PNG)
+ ![Second image of the pep8 validation results](assets/docs/image-of-validation-2.PNG)
+ ![Third image of the pep8 validation results](assets/docs/image-of-validation-3.PNG)  
 
 ## Deployment
 
