@@ -59,30 +59,28 @@ Add a counter of how many wins/losses the user/computer has achieved.
 
 I have manually tested this project by doing the following:
 
-    Tested each individual function with a print statement to ensure each function works.
+- Tested each individual function with a print statement to ensure each function works.
 
-    Tested the code in the Heroku app to ensure, once deployed the program functions as intended.
+- Tested the code in the Heroku app to ensure, once deployed the program functions as intended.
 
-    Entered invalid inputs to test the error handling measures inside the code.
+- Entered invalid inputs to test the error handling measures inside the code.
 
-    When I ran my code through pep8 there were issues with empty whitespaces. These 
-    have since been removed and now when I run my code through pep8 it gets the 'All clear, no
-    errors found' response. 
+- When I ran my code through pep8 there were issues with empty whitespaces. These have since been removed and now when I run my code through pep8 it gets the 'All clear, no errors found' response. 
 
 
 
 ## Bugs
 
-    Solved bugs
+Solved bugs
 
-   There was a bug involving the segment where the user inputs their name.
-   If the user decided to spam numbers into the input, it resulted in numerous
-   extra roll inputs once the initial 3 had been completed. This has since been
-   fixed by changing the 'break' into a 'return' at the end of the if/else statement.
+- There was a bug involving the segment where the user inputs their name.
+If the user decided to spam numbers into the input, it resulted in numerous
+extra roll inputs once the initial 3 had been completed. This has since been
+fixed by changing the 'break' into a 'return' at the end of the if/else statement.
 
 ## Validator Testing
 
-    Pep8
+Below are the results from when I ran my code through the pep8 validator.
 
 ![Image of results from pep8](assets/docs/pep8-results.PNG)    
 
@@ -90,19 +88,20 @@ I have manually tested this project by doing the following:
 
 This project was first deployed on Github and then was deployed through Heroku.
 
-    Steps for deployment:
-        Fork or clone this repository
-        Create a new Heroku app
-        Set the buildbacks to Python and NodeJS in that order
-        Link the Heroku app to the repository
-        Click on Deploy
+-Steps for deployment:
+    - Fork or clone this repository
+    - Create a new Heroku app
+    - Set the buildbacks to Python and NodeJS in that order
+    - Link the Heroku app to the repository
+    - Click on Deploy
 
 
 
 ## Credits / References
 
-Stackover flow was used for correct syntax . https://stackoverflow.com/
-Youtube was used for inspiration for PP3. https://www.youtube.com/@TechWithTim
-w3schools. https://www.w3schools.com/
-chatGPT was used for . https://chatgpt.com/?oai-dm=1
-Code Institute was used for the template of PP3 README.md. https://codeinstitute.net/
+- [Stackover flow](https://stackoverflow.com/questions/2052390/manually-raising-throwing-an-exception-in-python/24065533#24065533) was used as a reference example for building the exception handling for the users rolls.
+- Alongside Stackover Flow, the Code Institute 'Love Sandwiches' walkthrough project was also used as a reference point for exception handling.
+- [Youtube](https://www.youtube.com/watch?v=21FnnGKSRZo) Was used as an inspiration piece for 
+my project idea and the random_number() function.
+- [w3schools](https://www.w3schools.com/python/ref_keyword_elif.asp) Was used as a reference for the elif statements for the users results from their total score. 
+- [Code Institute](https://codeinstitute.net/) The template of my README.md was taken from the example README.md from the PP3 section of the Code Institute course.
