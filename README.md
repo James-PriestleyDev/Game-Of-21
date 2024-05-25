@@ -115,3 +115,4 @@ This project was first deployed on Github and then was deployed through Heroku.
 my project idea and the random_number() function.
 - [w3schools](https://www.w3schools.com/python/ref_keyword_elif.asp) Was used as a reference for the elif statements for the users results from their total score. 
 - [Code Institute](https://codeinstitute.net/) The template of my README.md was taken from the example README.md from the PP3 section of the Code Institute course.
+- [ChatGPT](https://chatgpt.com/?oai-dm=1) This was used as an additional support resource for syntax issues and troubleshooting. 
