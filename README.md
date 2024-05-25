@@ -21,35 +21,35 @@ player which they will be playing against. After the user has inputted this info
 
 Random number generator
 
- [Provide image of random number once user has rolled the dice]
+![Image of random number being generated](assets/docs/random-num.PNG)
 
 User is able to input their own name into the game.
 
-[Provide image of program taking users name]
+![Image of the prompt for user to input their name](assets/docs/image-player-name.PNG)
 
 User can name their 'challenger' (computer player)
 
-[Provide image of program taking name for challenger]
+![Image of the prompt for the user to input a name for their 'challenger'](assets/docs/image-computer-name.PNG)
 
 Takes user input and validates whether input is valid or not and gives response if invalid.
 
-[Provide image of invalid input]
+![Image of invalid name input](assets/docs/image-invalid-input.PNG)
 
 Rolling the dice, feature
 
-[Provide image of rolling dice]
+![Image of the dice once rolled](assets/docs/image-of-roll.PNG)
 
 Exception handling if user attempts to input anything other than 'roll'
 
-[Provide image of error warning when != 'roll']
+![Image of the outcome of an invalid attempt at rolling the dice](assets/docs/image-invalid-roll.PNG)
 
 Adds the users results from each individual roll of the dice
 
-[Provide image of the users first, second and third roll]
+![Image of the total number from the users 3 rolls](assets/docs/image-total-amount.PNG)
 
 Program tells user whether they are winner or not and shows their total.
 
-[Provide image of end result]
+![Image of the results from the users rolls and the computers score](assets/docs/image-outcome.PNG)
 
 ## Future Features
 
@@ -84,7 +84,7 @@ I have manually tested this project by doing the following:
 
     Pep8
 
-[Provide image of pep8 results]    
+![Image of results from pep8](assets/docs/pep8-results.PNG)    
 
 ## Deployment
 
@@ -101,8 +101,8 @@ This project was first deployed on Github and then was deployed through Heroku.
 
 ## Credits / References
 
-Stackover flow. https://stackoverflow.com/
-Youtube. https://www.youtube.com/@TechWithTim
+Stackover flow was used for correct syntax . https://stackoverflow.com/
+Youtube was used for inspiration for PP3. https://www.youtube.com/@TechWithTim
 w3schools. https://www.w3schools.com/
-chatGPT. https://chatgpt.com/?oai-dm=1
-Code Institute pp3 README.md example. https://codeinstitute.net/
+chatGPT was used for . https://chatgpt.com/?oai-dm=1
+Code Institute was used for the template of PP3 README.md. https://codeinstitute.net/
